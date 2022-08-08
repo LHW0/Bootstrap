@@ -1,0 +1,45 @@
+<head>
+    <title>align</title>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='http://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'/>
+    <style>
+        .col {
+            font-size: 6rem;
+            border: .1rem solid;
+        }
+        span {
+            font-size: 2rem;
+            border: 0.01rem dotted;
+            background-color: blue;
+        }
+        span.align-baseline{
+            line-height: 36rem;
+        }
+
+
+        table {
+            height: 6rem;
+        }
+    </style>
+</head>
+<body>
+    <div class='container'>
+        <div class='row'>
+            <div class='col'>M
+                <!--부모의 baseline을 baseline으로 정렬한다.-->
+                <span class='align-baseline'>baseline</span>
+                <!--부모의 line-height를 기준으로 중앙에 정렬한다.-->
+                <span class='align-middle'>middle</span>
+                <!--요소의 맨 위를 줄에서 가장 큰 요소의 맨 위에 맞춘다.-->
+                <span class='align-top'>top</span>
+                <!--요소의 맨 아래를 줄에서 가장 큰 요소의 맨 아래에 맞춘다.-->
+                <span class='align-bottom'>bottom</span>
+                <!--부모의 line-height를 기준으로 맨 위에 요소의 맨 위를 맞춘다.-->
+                <span class='align-text-top'>text-top</span>
+                <!--부모의 line-height를 기준으로 맨 아래에 요소의 맨 아래에 맞춘다.-->
+                <span class='align-text-bottom'>text-bottom</span>
+            </div>
+        </div>
+    </div>
+</body>
